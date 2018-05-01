@@ -1,6 +1,4 @@
 package dAd;
-import java.awt.Image;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Der {
 	private vect pos;

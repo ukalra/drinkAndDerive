@@ -2,16 +2,9 @@ package dAd;
 
 
 import java.awt.Dimension;
-import java.awt.GraphicsEnvironment;
 import java.awt.Image;
-import java.awt.Rectangle;
 import java.awt.Toolkit;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseEvent;
-import java.util.concurrent.ThreadLocalRandom;
 
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
 
 public abstract class Char {
 	protected vect vel = new vect(0, 0, 0);
@@ -49,7 +42,7 @@ public abstract class Char {
     public void die() {
     	health = 0;
     }
-    //getters
+
     public int getX() { return (int)pos.getX(); }
     public int getY() { return (int)pos.getY(); }
     public vect getPos() {	return pos; }
@@ -63,7 +56,7 @@ public abstract class Char {
     
     public vect getCenterPos() { return new vect((pos.getX() + scale * width / 2.0), pos.getY() + scale * height / 2.0, 0); }
     public int getHealth() { return health; }
-    //setters
+
     public void setAngle(float a) { angle = toRad(a); } 
     protected double toRad(double degrees) {
     	return (degrees * Math.PI / 180.0);

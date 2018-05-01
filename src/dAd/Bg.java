@@ -1,12 +1,12 @@
 package dAd;
-import java.awt.BasicStroke;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.FontMetrics;
+
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.Rectangle;
+
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,13 +14,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.geom.CubicCurve2D;
-import java.awt.geom.Line2D;
-import java.awt.geom.QuadCurve2D;
-import java.util.ArrayList;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 import javax.swing.JPanel;
 import javax.swing.Timer;
@@ -99,7 +93,7 @@ incorrect.update();
 
 
 @Override
-public void actionPerformed(ActionEvent e) {    //update()
+public void actionPerformed(ActionEvent e) {  
 	vehicle.update(getWidth(), getHeight());
 	  double dist = correct.getSize() + vehicle.getWidth()*vehicle.getScale()/2;
 	  double dist2 = incorrect.getSize() + vehicle.getWidth()*vehicle.getScale()/2;

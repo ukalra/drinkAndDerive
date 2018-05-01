@@ -7,11 +7,20 @@ import javax.swing.JFrame;
 
 public class Starter extends JFrame {
 
-    public Starter() {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * 
+	 */
+
+	public Starter() {
     	add(new Bg());
         setTitle("Drink And Derive");
         setSize(Toolkit.getDefaultToolkit().getScreenSize());
-        //setSize(1500, 750);
+
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
