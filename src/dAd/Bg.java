@@ -80,9 +80,9 @@ private void doDrawing(Graphics g) {
   
 
     g2d.drawString(correct.problem[correct.getValue()], (int)screenSize.getWidth()/2 - oof2, 2*(int)screenSize.getHeight()/6);
-    g2d.setFont(new Font("Verdana", Font.BOLD, 60));
+    g2d.setFont(new Font("Verdana", Font.BOLD, 40));
     
-    g2d.drawString("Score: "+ score+finish, 0*(int)screenSize.getWidth()/6, (int)screenSize.getHeight()/6);
+    g2d.drawString("Score: "+ score+ "\n" +finish, 0*(int)screenSize.getWidth()/6, (int)screenSize.getHeight()/6);
 correct.update();
 incorrect.update();
     g2d.drawImage(vehicle.getImage(), vehicle.getX(), vehicle.getY(), (int)(vehicle.getScale() * vehicle.getWidth()), (int)(vehicle.getScale() * vehicle.getHeight()), this);
